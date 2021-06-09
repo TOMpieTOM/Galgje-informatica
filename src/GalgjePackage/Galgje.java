@@ -41,6 +41,8 @@ public class Galgje extends javax.swing.JFrame {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
+
+        txtWoord.setText("kun jij dit lezen");
         getContentPane().add(txtWoord, new AbsoluteConstraints(140, 40, 100, -1));
 
         jLabel1.setText("Woord:");
