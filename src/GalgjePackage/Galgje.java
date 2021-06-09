@@ -5,6 +5,7 @@
  */
 package GalgjePackage;
 
+import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.GroupLayout;
@@ -44,8 +45,6 @@ public class Galgje extends javax.swing.JFrame {
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
-
-        txtWoord.setText("kun jij dit lezen");
         getContentPane().add(txtWoord, new AbsoluteConstraints(140, 40, 100, -1));
 
         jLabel1.setText("Woord:");
@@ -69,7 +68,11 @@ public class Galgje extends javax.swing.JFrame {
         // TODO add your handling code here:
         try
         {
-            
+            txtWoord.getText();
+        }
+        catch(NumberFormatException e)
+        {
+            JOptionPane.showMessageDialog(Galgje.this, "FOUT");
         }
     }//GEN-LAST:event_btnStartActionPerformed
 
