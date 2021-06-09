@@ -5,6 +5,8 @@
  */
 package GalgjePackage;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -38,6 +40,7 @@ public class Galgje extends javax.swing.JFrame {
         txtWoord = new JTextField();
         jLabel1 = new JLabel();
         jButton1 = new JButton();
+        btnStart = new JButton();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
@@ -51,8 +54,24 @@ public class Galgje extends javax.swing.JFrame {
         jButton1.setText("jButton1");
         getContentPane().add(jButton1, new AbsoluteConstraints(80, 290, -1, -1));
 
+        btnStart.setText("Start");
+        btnStart.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnStartActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnStart, new AbsoluteConstraints(330, 40, -1, -1));
+
         setBounds(0, 0, 936, 515);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnStartActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
+        // TODO add your handling code here:
+        try
+        {
+            
+        }
+    }//GEN-LAST:event_btnStartActionPerformed
 
     /**
      * @param args the command line arguments
@@ -90,6 +109,7 @@ public class Galgje extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private JButton btnStart;
     private JButton jButton1;
     private JLabel jLabel1;
     private JTextField txtWoord;
