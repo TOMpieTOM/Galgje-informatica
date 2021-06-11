@@ -43,6 +43,7 @@ public class Galgje extends javax.swing.JFrame {
         jButton1 = new JButton();
         btnStart = new JButton();
         jButton2 = new JButton();
+        jButton3 = new JButton();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
@@ -64,6 +65,9 @@ public class Galgje extends javax.swing.JFrame {
 
         jButton2.setText("jButton2");
         getContentPane().add(jButton2, new AbsoluteConstraints(700, 250, -1, -1));
+
+        jButton3.setText("jButton3");
+        getContentPane().add(jButton3, new AbsoluteConstraints(430, 310, -1, -1));
 
         setBounds(0, 0, 936, 515);
     }// </editor-fold>//GEN-END:initComponents
@@ -119,6 +123,7 @@ public class Galgje extends javax.swing.JFrame {
     private JButton btnStart;
     private JButton jButton1;
     private JButton jButton2;
+    private JButton jButton3;
     private JLabel jLabel1;
     private JTextField txtWoord;
     // End of variables declaration//GEN-END:variables
