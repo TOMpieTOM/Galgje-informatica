@@ -9,6 +9,7 @@ import javax.swing.JOptionPane;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.GroupLayout;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
@@ -38,23 +39,32 @@ public class Galgje extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtWoord = new JTextField();
+        txtLetter = new JTextField();
         jLabel1 = new JLabel();
-        jButton1 = new JButton();
         btnStart = new JButton();
-        jButton2 = new JButton();
-        jButton3 = new JButton();
-        jButton4 = new JButton();
+        txtLetter1 = new JTextField();
+        txtLetter2 = new JTextField();
+        txtLetter3 = new JTextField();
+        btnRaad = new JButton();
+        lblPlaatje2 = new JLabel();
+        lblPlaatje1 = new JLabel();
+        lblPlaatje3 = new JLabel();
+        lblPlaatje4 = new JLabel();
+        lblPlaatje5 = new JLabel();
+        lblPlaatje6 = new JLabel();
+        lblPlaatje7 = new JLabel();
+        lblPlaatje8 = new JLabel();
+        lblPlaatje9 = new JLabel();
+        lblPlaatje10 = new JLabel();
+        lblPlaatje11 = new JLabel();
+        lblPlaatje12 = new JLabel();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
-        getContentPane().add(txtWoord, new AbsoluteConstraints(140, 40, 100, -1));
+        getContentPane().add(txtLetter, new AbsoluteConstraints(450, 40, 100, -1));
 
-        jLabel1.setText("Woord:");
-        getContentPane().add(jLabel1, new AbsoluteConstraints(60, 40, -1, -1));
-
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new AbsoluteConstraints(80, 290, -1, -1));
+        jLabel1.setText("Letter:");
+        getContentPane().add(jLabel1, new AbsoluteConstraints(390, 40, -1, -1));
 
         btnStart.setText("Start");
         btnStart.addActionListener(new ActionListener() {
@@ -62,31 +72,227 @@ public class Galgje extends javax.swing.JFrame {
                 btnStartActionPerformed(evt);
             }
         });
-        getContentPane().add(btnStart, new AbsoluteConstraints(330, 40, -1, -1));
+        getContentPane().add(btnStart, new AbsoluteConstraints(30, 40, -1, -1));
 
-        jButton2.setText("jButton2");
-        getContentPane().add(jButton2, new AbsoluteConstraints(700, 250, -1, -1));
+        txtLetter1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                txtLetter1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtLetter1, new AbsoluteConstraints(100, 180, 50, 40));
 
-        jButton3.setText("jButton3");
-        getContentPane().add(jButton3, new AbsoluteConstraints(430, 310, -1, -1));
+        txtLetter2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                txtLetter2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtLetter2, new AbsoluteConstraints(180, 180, 50, 40));
 
-        jButton4.setText("jButton4");
-        getContentPane().add(jButton4, new AbsoluteConstraints(640, 140, -1, -1));
+        txtLetter3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                txtLetter3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtLetter3, new AbsoluteConstraints(260, 180, 50, 40));
+
+        btnRaad.setText("Raad");
+        btnRaad.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnRaadActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnRaad, new AbsoluteConstraints(620, 40, -1, -1));
+
+        lblPlaatje2.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje2.png")); // NOI18N
+        getContentPane().add(lblPlaatje2, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje1.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje1.png")); // NOI18N
+        getContentPane().add(lblPlaatje1, new AbsoluteConstraints(420, 190, -1, 300));
+
+        lblPlaatje3.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje3.png")); // NOI18N
+        getContentPane().add(lblPlaatje3, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje4.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje4.png")); // NOI18N
+        getContentPane().add(lblPlaatje4, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje5.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje5.png")); // NOI18N
+        getContentPane().add(lblPlaatje5, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje6.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje6.png")); // NOI18N
+        getContentPane().add(lblPlaatje6, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje7.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje7.png")); // NOI18N
+        getContentPane().add(lblPlaatje7, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje8.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje8.png")); // NOI18N
+        getContentPane().add(lblPlaatje8, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje9.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje9.png")); // NOI18N
+        getContentPane().add(lblPlaatje9, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje10.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje10.png")); // NOI18N
+        getContentPane().add(lblPlaatje10, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje11.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje11.png")); // NOI18N
+        getContentPane().add(lblPlaatje11, new AbsoluteConstraints(420, 140, -1, -1));
+
+        lblPlaatje12.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje12.png")); // NOI18N
+        getContentPane().add(lblPlaatje12, new AbsoluteConstraints(420, 140, -1, -1));
 
         setBounds(0, 0, 936, 515);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         // TODO add your handling code here:
-        try
+       
+    }//GEN-LAST:event_btnStartActionPerformed
+
+    private void btnRaadActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnRaadActionPerformed
+        // TODO add your handling code here:
+         try
         {
-            txtWoord.getText();
+            txtLetter.getText();
         }
+         
+         if a=()
+                 {setText ()   }
+         else  a=() false
+                 {showPlaatje}
+                 
+          if b=()
+                 {setText ()   }
+         else  b=() false
+                 {showPlaatje}
+                 
+          if c=()
+                 {setText ()   }
+         else  c=() false
+                 {showPlaatje}
+          if d=()
+                 {setText ()   }
+         else  d=() false
+                 {showPlaatje}
+                 
+          if e=()
+                 {setText ()   }
+         else  e=() false
+                 {showPlaatje}
+                 
+          if f=()
+                 {setText ()   }
+         else  f=() false
+                 {showPlaatje}
+          if g=()
+                 {setText ()   }
+         else  g=() false
+                 {showPlaatje}
+                 
+          if h=()
+                 {setText ()   }
+         else  h=() false
+                 {showPlaatje}
+                 
+          if i=()
+                 {setText ()   }
+         else  i=() false
+                 {showPlaatje}
+          if j=()
+                 {setText ()   }
+         else  j=() false
+                 {showPlaatje}
+                 
+          if k=()
+                 {setText ()   }
+         else  k=() false
+                 {showPlaatje}
+          if l=()
+                 {setText ()   }
+         else  l=() false
+                 {showPlaatje}
+                 
+          if m=()
+                 {setText ()   }
+         else  m=() false
+                 {showPlaatje}
+                 
+          if n=()
+                 {setText ()   }
+         else  n=() false
+                 {showPlaatje}
+                 
+          if o=()
+                 {setText ()   }
+         else  o=() false
+                 {showPlaatje}
+                 
+          if p=()
+                 {setText ()   }
+         else  p=() false
+                 {showPlaatje}
+                 
+          if q=()
+                 {setText ()   }
+         else  q=() false
+                 {showPlaatje}
+          if r=()
+                 {setText ()   }
+         else  r=() false
+                 {showPlaatje}
+          if s=()
+                 {setText ()   }
+         else  s=() false
+                 {showPlaatje}
+          if t=()
+                 {setText ()   }
+         else  t=() false
+                 {showPlaatje}
+          if u=()
+                 {setText ()   }
+         else  u=() false
+                 {showPlaatje}
+          if v=()
+                 {setText ()   }
+         else  v=() false
+                 {showPlaatje}
+          if w=()
+                 {setText ()   }
+         else  w=() false
+                 {showPlaatje}
+          if x=()
+                 {setText ()   }
+         else  x=() false
+                 {showPlaatje}
+          if y=()
+                 {setText ()   }
+         else  y=() false
+                 {showPlaatje}
+          if z=()
+                 {setText ()   }
+         else  z=() false
+                 {showPlaatje}
+         
+         
+                 
         catch(NumberFormatException e)
         {
             JOptionPane.showMessageDialog(Galgje.this, "FOUT");
         }
-    }//GEN-LAST:event_btnStartActionPerformed
+    }//GEN-LAST:event_btnRaadActionPerformed
+
+    private void txtLetter1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter1ActionPerformed
+        // TODO add your handling code here:
+        getValue = 22;
+    }//GEN-LAST:event_txtLetter1ActionPerformed
+
+    private void txtLetter2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter2ActionPerformed
+        // TODO add your handling code here:
+        getValue = (9);
+    }//GEN-LAST:event_txtLetter2ActionPerformed
+
+    private void txtLetter3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter3ActionPerformed
+        // TODO add your handling code here:
+        getValue = 19;
+    }//GEN-LAST:event_txtLetter3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -124,12 +330,24 @@ public class Galgje extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private JButton btnRaad;
     private JButton btnStart;
-    private JButton jButton1;
-    private JButton jButton2;
-    private JButton jButton3;
-    private JButton jButton4;
     private JLabel jLabel1;
-    private JTextField txtWoord;
+    private JLabel lblPlaatje1;
+    private JLabel lblPlaatje10;
+    private JLabel lblPlaatje11;
+    private JLabel lblPlaatje12;
+    private JLabel lblPlaatje2;
+    private JLabel lblPlaatje3;
+    private JLabel lblPlaatje4;
+    private JLabel lblPlaatje5;
+    private JLabel lblPlaatje6;
+    private JLabel lblPlaatje7;
+    private JLabel lblPlaatje8;
+    private JLabel lblPlaatje9;
+    private JTextField txtLetter;
+    private JTextField txtLetter1;
+    private JTextField txtLetter2;
+    private JTextField txtLetter3;
     // End of variables declaration//GEN-END:variables
 }
