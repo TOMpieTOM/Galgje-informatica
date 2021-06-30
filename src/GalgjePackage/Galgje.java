@@ -58,6 +58,32 @@ public class Galgje extends javax.swing.JFrame {
         lblPlaatje10 = new JLabel();
         lblPlaatje11 = new JLabel();
         lblPlaatje12 = new JLabel();
+        btnLetterU = new JButton();
+        btnLetterA = new JButton();
+        btnLetterB = new JButton();
+        btnLetterC = new JButton();
+        btnLetterD = new JButton();
+        btnLetterE = new JButton();
+        btnLetterF = new JButton();
+        btnLetterG = new JButton();
+        btnLetterH = new JButton();
+        btnLetterI = new JButton();
+        btnLetterJ = new JButton();
+        btnLetterK = new JButton();
+        btnLetterL = new JButton();
+        btnLetterM = new JButton();
+        btnLetterN = new JButton();
+        btnLetterO = new JButton();
+        btnLetterP = new JButton();
+        btnLetterQ = new JButton();
+        btnLetterR = new JButton();
+        btnLetterS = new JButton();
+        btnLetterT = new JButton();
+        btnLetterZ = new JButton();
+        btnLetterY = new JButton();
+        btnLetterX = new JButton();
+        btnLetterW = new JButton();
+        btnLetterV = new JButton();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
@@ -139,20 +165,123 @@ public class Galgje extends javax.swing.JFrame {
         lblPlaatje12.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje12.png")); // NOI18N
         getContentPane().add(lblPlaatje12, new AbsoluteConstraints(420, 140, -1, -1));
 
+        btnLetterU.setText("U");
+        getContentPane().add(btnLetterU, new AbsoluteConstraints(40, 320, -1, -1));
+
+        btnLetterA.setText("A");
+        btnLetterA.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterAActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLetterA, new AbsoluteConstraints(20, 260, -1, -1));
+
+        btnLetterB.setText("B");
+        getContentPane().add(btnLetterB, new AbsoluteConstraints(60, 260, -1, -1));
+
+        btnLetterC.setText("C");
+        getContentPane().add(btnLetterC, new AbsoluteConstraints(100, 260, -1, -1));
+
+        btnLetterD.setText("D");
+        getContentPane().add(btnLetterD, new AbsoluteConstraints(140, 260, -1, -1));
+
+        btnLetterE.setText("E");
+        getContentPane().add(btnLetterE, new AbsoluteConstraints(180, 260, -1, -1));
+
+        btnLetterF.setText("F");
+        btnLetterF.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterFActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLetterF, new AbsoluteConstraints(220, 260, -1, -1));
+
+        btnLetterG.setText("G");
+        getContentPane().add(btnLetterG, new AbsoluteConstraints(260, 260, -1, -1));
+
+        btnLetterH.setText("H");
+        getContentPane().add(btnLetterH, new AbsoluteConstraints(30, 280, -1, -1));
+
+        btnLetterI.setText("I");
+        getContentPane().add(btnLetterI, new AbsoluteConstraints(70, 280, -1, -1));
+
+        btnLetterJ.setText("J");
+        getContentPane().add(btnLetterJ, new AbsoluteConstraints(110, 280, -1, -1));
+
+        btnLetterK.setText("K");
+        getContentPane().add(btnLetterK, new AbsoluteConstraints(150, 280, -1, -1));
+
+        btnLetterL.setText("L");
+        btnLetterL.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterLActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnLetterL, new AbsoluteConstraints(190, 280, -1, -1));
+
+        btnLetterM.setText("M");
+        getContentPane().add(btnLetterM, new AbsoluteConstraints(230, 280, -1, -1));
+
+        btnLetterN.setText("N");
+        getContentPane().add(btnLetterN, new AbsoluteConstraints(20, 300, -1, -1));
+
+        btnLetterO.setText("O");
+        getContentPane().add(btnLetterO, new AbsoluteConstraints(60, 300, -1, -1));
+
+        btnLetterP.setText("P");
+        getContentPane().add(btnLetterP, new AbsoluteConstraints(100, 300, -1, -1));
+
+        btnLetterQ.setText("Q");
+        getContentPane().add(btnLetterQ, new AbsoluteConstraints(140, 300, -1, -1));
+
+        btnLetterR.setText("R");
+        getContentPane().add(btnLetterR, new AbsoluteConstraints(180, 300, -1, -1));
+
+        btnLetterS.setText("S");
+        getContentPane().add(btnLetterS, new AbsoluteConstraints(220, 300, -1, -1));
+
+        btnLetterT.setText("T");
+        getContentPane().add(btnLetterT, new AbsoluteConstraints(260, 300, -1, -1));
+
+        btnLetterZ.setText("Z");
+        getContentPane().add(btnLetterZ, new AbsoluteConstraints(240, 320, -1, -1));
+
+        btnLetterY.setText("Y");
+        getContentPane().add(btnLetterY, new AbsoluteConstraints(200, 320, -1, -1));
+
+        btnLetterX.setText("X");
+        getContentPane().add(btnLetterX, new AbsoluteConstraints(160, 320, -1, -1));
+
+        btnLetterW.setText("W");
+        getContentPane().add(btnLetterW, new AbsoluteConstraints(120, 320, -1, -1));
+
+        btnLetterV.setText("V");
+        getContentPane().add(btnLetterV, new AbsoluteConstraints(80, 320, -1, -1));
+
         setBounds(0, 0, 936, 515);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnStartActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         // TODO add your handling code here:
-       
+       lblPlaatje1.setVisible(true);
+       lblPlaatje2.setVisible(false);
+       lblPlaatje3.setVisible(false);
+       lblPlaatje4.setVisible(false);
+       lblPlaatje5.setVisible(false);
+       lblPlaatje6.setVisible(false);
+       lblPlaatje7.setVisible(false);
+       lblPlaatje8.setVisible(false);
+       lblPlaatje9.setVisible(false);
+       lblPlaatje10.setVisible(false);
+       lblPlaatje11.setVisible(false);
+       lblPlaatje12.setVisible(false);
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnRaadActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnRaadActionPerformed
         // TODO add your handling code here:
          try
-        {
-            txtLetter.getText();
-        }
+        
+        
          
          if a=()
                  {setText ()   }
@@ -281,7 +410,7 @@ public class Galgje extends javax.swing.JFrame {
 
     private void txtLetter1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter1ActionPerformed
         // TODO add your handling code here:
-        getValue = 22;
+        txtLetter1.getValue = (22);
     }//GEN-LAST:event_txtLetter1ActionPerformed
 
     private void txtLetter2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter2ActionPerformed
@@ -293,6 +422,19 @@ public class Galgje extends javax.swing.JFrame {
         // TODO add your handling code here:
         getValue = 19;
     }//GEN-LAST:event_txtLetter3ActionPerformed
+
+    private void btnLetterFActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterFActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLetterFActionPerformed
+
+    private void btnLetterLActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterLActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnLetterLActionPerformed
+
+    private void btnLetterAActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterAActionPerformed
+        // TODO add your handling code here:
+        btnLetterA.getValue = (1); 
+    }//GEN-LAST:event_btnLetterAActionPerformed
 
     /**
      * @param args the command line arguments
@@ -330,6 +472,32 @@ public class Galgje extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private JButton btnLetterA;
+    private JButton btnLetterB;
+    private JButton btnLetterC;
+    private JButton btnLetterD;
+    private JButton btnLetterE;
+    private JButton btnLetterF;
+    private JButton btnLetterG;
+    private JButton btnLetterH;
+    private JButton btnLetterI;
+    private JButton btnLetterJ;
+    private JButton btnLetterK;
+    private JButton btnLetterL;
+    private JButton btnLetterM;
+    private JButton btnLetterN;
+    private JButton btnLetterO;
+    private JButton btnLetterP;
+    private JButton btnLetterQ;
+    private JButton btnLetterR;
+    private JButton btnLetterS;
+    private JButton btnLetterT;
+    private JButton btnLetterU;
+    private JButton btnLetterV;
+    private JButton btnLetterW;
+    private JButton btnLetterX;
+    private JButton btnLetterY;
+    private JButton btnLetterZ;
     private JButton btnRaad;
     private JButton btnStart;
     private JLabel jLabel1;
