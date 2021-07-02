@@ -39,13 +39,7 @@ public class Galgje extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtLetter = new JTextField();
-        jLabel1 = new JLabel();
         btnStart = new JButton();
-        txtLetter1 = new JTextField();
-        txtLetter2 = new JTextField();
-        txtLetter3 = new JTextField();
-        btnRaad = new JButton();
         lblPlaatje2 = new JLabel();
         lblPlaatje1 = new JLabel();
         lblPlaatje3 = new JLabel();
@@ -84,13 +78,15 @@ public class Galgje extends javax.swing.JFrame {
         btnLetterX = new JButton();
         btnLetterW = new JButton();
         btnLetterV = new JButton();
+        lblLetterV = new JLabel();
+        lblLetterI = new JLabel();
+        lblLetterS = new JLabel();
+        lblVraagteken1 = new JLabel();
+        lblVraagteken2 = new JLabel();
+        lblVraagteken3 = new JLabel();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new AbsoluteLayout());
-        getContentPane().add(txtLetter, new AbsoluteConstraints(450, 40, 100, -1));
-
-        jLabel1.setText("Letter:");
-        getContentPane().add(jLabel1, new AbsoluteConstraints(390, 40, -1, -1));
 
         btnStart.setText("Start");
         btnStart.addActionListener(new ActionListener() {
@@ -99,35 +95,6 @@ public class Galgje extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnStart, new AbsoluteConstraints(30, 40, -1, -1));
-
-        txtLetter1.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                txtLetter1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtLetter1, new AbsoluteConstraints(100, 180, 50, 40));
-
-        txtLetter2.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                txtLetter2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtLetter2, new AbsoluteConstraints(180, 180, 50, 40));
-
-        txtLetter3.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                txtLetter3ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtLetter3, new AbsoluteConstraints(260, 180, 50, 40));
-
-        btnRaad.setText("Raad");
-        btnRaad.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent evt) {
-                btnRaadActionPerformed(evt);
-            }
-        });
-        getContentPane().add(btnRaad, new AbsoluteConstraints(620, 40, -1, -1));
 
         lblPlaatje2.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\galgje2.png")); // NOI18N
         getContentPane().add(lblPlaatje2, new AbsoluteConstraints(420, 140, -1, -1));
@@ -206,6 +173,11 @@ public class Galgje extends javax.swing.JFrame {
         getContentPane().add(btnLetterI, new AbsoluteConstraints(70, 280, -1, -1));
 
         btnLetterJ.setText("J");
+        btnLetterJ.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterJActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnLetterJ, new AbsoluteConstraints(110, 280, -1, -1));
 
         btnLetterK.setText("K");
@@ -238,6 +210,11 @@ public class Galgje extends javax.swing.JFrame {
         getContentPane().add(btnLetterR, new AbsoluteConstraints(180, 300, -1, -1));
 
         btnLetterS.setText("S");
+        btnLetterS.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterSActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnLetterS, new AbsoluteConstraints(220, 300, -1, -1));
 
         btnLetterT.setText("T");
@@ -256,7 +233,30 @@ public class Galgje extends javax.swing.JFrame {
         getContentPane().add(btnLetterW, new AbsoluteConstraints(120, 320, -1, -1));
 
         btnLetterV.setText("V");
+        btnLetterV.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterVActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnLetterV, new AbsoluteConstraints(80, 320, -1, -1));
+
+        lblLetterV.setIcon(new ImageIcon(getClass().getResource("/GalgjePackage/letterV.png"))); // NOI18N
+        getContentPane().add(lblLetterV, new AbsoluteConstraints(90, 170, -1, -1));
+
+        lblLetterI.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\letterI.png")); // NOI18N
+        getContentPane().add(lblLetterI, new AbsoluteConstraints(180, 180, -1, -1));
+
+        lblLetterS.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\letterS.png")); // NOI18N
+        getContentPane().add(lblLetterS, new AbsoluteConstraints(260, 180, -1, -1));
+
+        lblVraagteken1.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\Vraagteken.png")); // NOI18N
+        getContentPane().add(lblVraagteken1, new AbsoluteConstraints(80, 150, -1, 90));
+
+        lblVraagteken2.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\Vraagteken.png")); // NOI18N
+        getContentPane().add(lblVraagteken2, new AbsoluteConstraints(160, 150, -1, -1));
+
+        lblVraagteken3.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\Vraagteken.png")); // NOI18N
+        getContentPane().add(lblVraagteken3, new AbsoluteConstraints(250, 150, -1, -1));
 
         setBounds(0, 0, 936, 515);
     }// </editor-fold>//GEN-END:initComponents
@@ -275,153 +275,14 @@ public class Galgje extends javax.swing.JFrame {
        lblPlaatje10.setVisible(false);
        lblPlaatje11.setVisible(false);
        lblPlaatje12.setVisible(false);
+       lblLetterV.setVisible(false);
+       lblLetterI.setVisible(false);
+       lblLetterS.setVisible(false);
+       lblVraagteken1.setVisible(true);
+       lblVraagteken2.setVisible(true);
+       lblVraagteken3.setVisible(true);
+       
     }//GEN-LAST:event_btnStartActionPerformed
-
-    private void btnRaadActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnRaadActionPerformed
-        // TODO add your handling code here:
-         try
-        
-        
-         
-         if a=()
-                 {setText ()   }
-         else  a=() false
-                 {showPlaatje}
-                 
-          if b=()
-                 {setText ()   }
-         else  b=() false
-                 {showPlaatje}
-                 
-          if c=()
-                 {setText ()   }
-         else  c=() false
-                 {showPlaatje}
-          if d=()
-                 {setText ()   }
-         else  d=() false
-                 {showPlaatje}
-                 
-          if e=()
-                 {setText ()   }
-         else  e=() false
-                 {showPlaatje}
-                 
-          if f=()
-                 {setText ()   }
-         else  f=() false
-                 {showPlaatje}
-          if g=()
-                 {setText ()   }
-         else  g=() false
-                 {showPlaatje}
-                 
-          if h=()
-                 {setText ()   }
-         else  h=() false
-                 {showPlaatje}
-                 
-          if i=()
-                 {setText ()   }
-         else  i=() false
-                 {showPlaatje}
-          if j=()
-                 {setText ()   }
-         else  j=() false
-                 {showPlaatje}
-                 
-          if k=()
-                 {setText ()   }
-         else  k=() false
-                 {showPlaatje}
-          if l=()
-                 {setText ()   }
-         else  l=() false
-                 {showPlaatje}
-                 
-          if m=()
-                 {setText ()   }
-         else  m=() false
-                 {showPlaatje}
-                 
-          if n=()
-                 {setText ()   }
-         else  n=() false
-                 {showPlaatje}
-                 
-          if o=()
-                 {setText ()   }
-         else  o=() false
-                 {showPlaatje}
-                 
-          if p=()
-                 {setText ()   }
-         else  p=() false
-                 {showPlaatje}
-                 
-          if q=()
-                 {setText ()   }
-         else  q=() false
-                 {showPlaatje}
-          if r=()
-                 {setText ()   }
-         else  r=() false
-                 {showPlaatje}
-          if s=()
-                 {setText ()   }
-         else  s=() false
-                 {showPlaatje}
-          if t=()
-                 {setText ()   }
-         else  t=() false
-                 {showPlaatje}
-          if u=()
-                 {setText ()   }
-         else  u=() false
-                 {showPlaatje}
-          if v=()
-                 {setText ()   }
-         else  v=() false
-                 {showPlaatje}
-          if w=()
-                 {setText ()   }
-         else  w=() false
-                 {showPlaatje}
-          if x=()
-                 {setText ()   }
-         else  x=() false
-                 {showPlaatje}
-          if y=()
-                 {setText ()   }
-         else  y=() false
-                 {showPlaatje}
-          if z=()
-                 {setText ()   }
-         else  z=() false
-                 {showPlaatje}
-         
-         
-                 
-        catch(NumberFormatException e)
-        {
-            JOptionPane.showMessageDialog(Galgje.this, "FOUT");
-        }
-    }//GEN-LAST:event_btnRaadActionPerformed
-
-    private void txtLetter1ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter1ActionPerformed
-        // TODO add your handling code here:
-        txtLetter1.getValue = (22);
-    }//GEN-LAST:event_txtLetter1ActionPerformed
-
-    private void txtLetter2ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter2ActionPerformed
-        // TODO add your handling code here:
-        getValue = (9);
-    }//GEN-LAST:event_txtLetter2ActionPerformed
-
-    private void txtLetter3ActionPerformed(ActionEvent evt) {//GEN-FIRST:event_txtLetter3ActionPerformed
-        // TODO add your handling code here:
-        getValue = 19;
-    }//GEN-LAST:event_txtLetter3ActionPerformed
 
     private void btnLetterFActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterFActionPerformed
         // TODO add your handling code here:
@@ -432,9 +293,26 @@ public class Galgje extends javax.swing.JFrame {
     }//GEN-LAST:event_btnLetterLActionPerformed
 
     private void btnLetterAActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterAActionPerformed
-        // TODO add your handling code here:
-        btnLetterA.getValue = (1); 
+        
     }//GEN-LAST:event_btnLetterAActionPerformed
+
+    private void btnLetterVActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterVActionPerformed
+        // TODO add your handling code here:
+        lblLetterV.setVisible(true);
+        lblVraagteken1.setVisible(false);
+    }//GEN-LAST:event_btnLetterVActionPerformed
+
+    private void btnLetterJActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterJActionPerformed
+        // TODO add your handling code here:
+        lblLetterI.setVisible(true);
+        lblVraagteken2.setVisible(false);
+    }//GEN-LAST:event_btnLetterJActionPerformed
+
+    private void btnLetterSActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterSActionPerformed
+        // TODO add your handling code here:
+        lblLetterS.setVisible(true);
+        lblVraagteken3.setVisible(false);
+    }//GEN-LAST:event_btnLetterSActionPerformed
 
     /**
      * @param args the command line arguments
@@ -498,9 +376,10 @@ public class Galgje extends javax.swing.JFrame {
     private JButton btnLetterX;
     private JButton btnLetterY;
     private JButton btnLetterZ;
-    private JButton btnRaad;
     private JButton btnStart;
-    private JLabel jLabel1;
+    private JLabel lblLetterI;
+    private JLabel lblLetterS;
+    private JLabel lblLetterV;
     private JLabel lblPlaatje1;
     private JLabel lblPlaatje10;
     private JLabel lblPlaatje11;
@@ -513,9 +392,8 @@ public class Galgje extends javax.swing.JFrame {
     private JLabel lblPlaatje7;
     private JLabel lblPlaatje8;
     private JLabel lblPlaatje9;
-    private JTextField txtLetter;
-    private JTextField txtLetter1;
-    private JTextField txtLetter2;
-    private JTextField txtLetter3;
+    private JLabel lblVraagteken1;
+    private JLabel lblVraagteken2;
+    private JLabel lblVraagteken3;
     // End of variables declaration//GEN-END:variables
 }
