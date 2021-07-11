@@ -22,7 +22,16 @@ import org.netbeans.lib.awtextra.AbsoluteLayout;
  * @author Kai
  */
 public class Galgje extends javax.swing.JFrame {
-
+  int score = 0;
+  public class void zetPlaatje(){
+      
+      Switch(score);
+              case 0.zetPlaatje= "lblPlaatje1";
+                    break;
+                    case 1.zetPlaatje     
+                    
+                   
+  }
     /**
      * Creates new form Galgje
      */
@@ -170,6 +179,11 @@ public class Galgje extends javax.swing.JFrame {
         getContentPane().add(btnLetterH, new AbsoluteConstraints(30, 280, -1, -1));
 
         btnLetterI.setText("I");
+        btnLetterI.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                btnLetterIActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnLetterI, new AbsoluteConstraints(70, 280, -1, -1));
 
         btnLetterJ.setText("J");
@@ -244,10 +258,10 @@ public class Galgje extends javax.swing.JFrame {
         getContentPane().add(lblLetterV, new AbsoluteConstraints(90, 170, -1, -1));
 
         lblLetterI.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\letterI.png")); // NOI18N
-        getContentPane().add(lblLetterI, new AbsoluteConstraints(180, 180, -1, -1));
+        getContentPane().add(lblLetterI, new AbsoluteConstraints(180, 170, 70, 70));
 
         lblLetterS.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\letterS.png")); // NOI18N
-        getContentPane().add(lblLetterS, new AbsoluteConstraints(260, 180, -1, -1));
+        getContentPane().add(lblLetterS, new AbsoluteConstraints(260, 168, 60, 70));
 
         lblVraagteken1.setIcon(new ImageIcon("C:\\Users\\Kai\\Documents\\NetBeansProjects\\Galgje\\src\\GalgjePackage\\Vraagteken.png")); // NOI18N
         getContentPane().add(lblVraagteken1, new AbsoluteConstraints(80, 150, -1, 90));
@@ -285,7 +299,8 @@ public class Galgje extends javax.swing.JFrame {
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnLetterFActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterFActionPerformed
-        // TODO add your handling code here:
+        
+        zetPlaatje();
     }//GEN-LAST:event_btnLetterFActionPerformed
 
     private void btnLetterLActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterLActionPerformed
@@ -304,8 +319,7 @@ public class Galgje extends javax.swing.JFrame {
 
     private void btnLetterJActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterJActionPerformed
         // TODO add your handling code here:
-        lblLetterI.setVisible(true);
-        lblVraagteken2.setVisible(false);
+       
     }//GEN-LAST:event_btnLetterJActionPerformed
 
     private void btnLetterSActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterSActionPerformed
@@ -313,6 +327,12 @@ public class Galgje extends javax.swing.JFrame {
         lblLetterS.setVisible(true);
         lblVraagteken3.setVisible(false);
     }//GEN-LAST:event_btnLetterSActionPerformed
+
+    private void btnLetterIActionPerformed(ActionEvent evt) {//GEN-FIRST:event_btnLetterIActionPerformed
+        // TODO add your handling code here:
+        lblLetterI.setVisible(true);
+        lblVraagteken2.setVisible(false);
+    }//GEN-LAST:event_btnLetterIActionPerformed
 
     /**
      * @param args the command line arguments
